@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    environment:
+      KEY: "value"
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/usr/src/
+    command:
+      npm start
